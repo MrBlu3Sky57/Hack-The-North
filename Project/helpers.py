@@ -49,3 +49,13 @@ def find_hackers(expected):
     con.close()
 
     return results
+
+# Let someone add a preference
+def add_pref(host_id, pref_id):
+    con = sqlite3.connect("hackers.db")
+    cur = con.cursor()
+
+    cur.execute("INSERT INTO preferred (host, pref) VALUES (?, ?)", host_id, pref_id)
+
+    cur.close()
+    con.close()
