@@ -1,4 +1,5 @@
 import sqlite3
+import matplotlib.pyplot as plt
 
 WEIGHT1 = 0.5
 WEIGHT2 = 0.3
