@@ -3,3 +3,4 @@ Tinder for Hackers: Matching Liked-Minded Hackers so they can form teams easiers
 - Website
 - Store "matches" for each user
 - Database of data for each user: i.e. programming languages known (1st, 2nd, 3rd), specialties (Front-End or Back-End), experience, etc.
+- different languages for a user (English, French, Spanish)
