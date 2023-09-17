@@ -50,6 +50,16 @@ def find_hackers(expected):
 
     return results
 
+# plot a graph displaying each possible member and their expected value?
+def graph_hackers(results):
+    x = [item[0] for item in results]
+    y = [item[1] for item in results]
+    plt.bar(x, y)
+    plt.xlabel('Hackers')
+    plt.ylabel('Likelihood of Match')
+    plt.title('List of Ideal Hackmates')
+    plt.show()
+
 # Let someone add a preference
 def add_pref(host_id, pref_id):
     con = sqlite3.connect("hackers.db")
